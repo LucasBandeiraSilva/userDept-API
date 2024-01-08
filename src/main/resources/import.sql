@@ -1,2 +1,3 @@
-INSERT INTO DEPARTMENT (departmentName) VALUES("Tech")
-INSERT INTO DEPARTMENT (departmentName) VALUES("Payment")
+INSERT INTO tb_department (id, department_Name) VALUES (1, 'Tech');
+
+INSERT INTO tb_department (id, department_Name) VALUES (2, 'Payment');
