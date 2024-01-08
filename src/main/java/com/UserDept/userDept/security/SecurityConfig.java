@@ -12,9 +12,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         HttpSecurity httpSecurity = http
-                .csrf(csrf -> csrf.disable()) // Desativa o CSRF
+                .csrf(csrf -> csrf.disable()) // Desativa o CSRF  //turn of CSRF
                 .headers(headers -> headers.frameOptions().sameOrigin())
-                .formLogin(login -> login.disable());// Desativa o formulário de login
+                .formLogin(login -> login.disable());// Desativa o formulário de login //Turn of login form
 
         return http.build();
     }
